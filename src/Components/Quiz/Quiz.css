@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    background-color: #7CC6FE;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main {
+    background-color: #252D4A;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    /* min-height: 400px; */
+    
+}
+@media only screen and (max-width:768px) {
+    .main{
+        width: 90%;
+    }
+}
+
+.content {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.score-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showResult {
+    min-width: 200px;
+    min-height: 200px;
+    width: 300px;
+    height: 300px;
+    background-color: #252D4A;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* padding: 30px; */
+
+}
+
+.showResult {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playAgain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    color: #7CC6FE;
+    text-shadow: 2px 2px #3e595b
+}
+
+.Question {
+    margin-bottom: 10px;
+}
+
+.category {
+    color: #e8eaee;
+    margin-bottom: 8px;
+}
+
+.input {
+    font-size: 25px;
+}
+.input .optionBtn{
+    width: 100%;
+    margin: auto;
+    background-color: #252D4A;
+    border-radius: 15px;
+    margin: 8px;
+    border:2px solid #7CC6FE;
+
+}
+.input .optionBtn:focus{
+    border: 2px solid #3e595b;
+    background-color: rgb(44, 243, 117);
+}
+.optionBtn.selected {
+    border: 2px solid #0066ff; /* Change the color to your desired border color */
+
+  }
+.start-div{
+    background-color: #252D4A;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+.btn-div {
+    text-align: right;   
+}
+.percent{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.optionBtn.correct {
+    background-color: #4caf50; /* Green background for correct answer */
+    color: #fff; /* White text for better visibility */
+  }
+  
+  /* Add this style for the incorrect answer */
+  .optionBtn.incorrect {
+    background-color: #ff5722; /* Red background for incorrect answer */
+    color: #fff; /* White text for better visibility */
+  }
+  
+  /* Add this style to disable the button after submission */
+  .optionBtn[disabled] {
+    cursor: not-allowed;
+    opacity: 0.7; /* You can adjust the opacity as per your preference */
+  }
+  
+  /* Add this style to highlight the selected option when not submitted */
+  .optionBtn.selected {
+    border: 2px solid #0066ff; /* Border color for selected option */
+  }
